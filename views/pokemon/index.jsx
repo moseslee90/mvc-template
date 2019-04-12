@@ -2,12 +2,13 @@ var React = require("react");
 
 class Home extends React.Component {
   render() {
-    console.log(this.props.types);
+    let data = this.props.data[0];
+    let name = data.name;
     return (
       <html>
         <head />
         <body>
-          <h3>Hello</h3>
+          <h3>Hello {name}</h3>
         </body>
       </html>
     );
